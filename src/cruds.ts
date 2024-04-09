@@ -46,7 +46,6 @@ export default class CRUDS {
     };
 
     this.users.push(newUser);
-    await this.save();
   }
 
   read() {
@@ -87,7 +86,6 @@ export default class CRUDS {
 
     this.users[index]!.name = name;
     this.users[index]!.email = email;
-    await this.save();
   }
 
   async delete() {
@@ -106,7 +104,6 @@ export default class CRUDS {
     }
 
     this.users.splice(index, 1);
-    await this.save();
   }
 
   async search() {

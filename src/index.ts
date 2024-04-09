@@ -28,6 +28,7 @@ async function main() {
 
     switch (choice) {
       case 0:
+        await cruds.save()
         return;
       case 1:
         await cruds.create();
