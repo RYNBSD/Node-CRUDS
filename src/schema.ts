@@ -2,8 +2,8 @@ import { z } from "zod";
 
 export const User = z.object({
   id: z.number().min(0),
-  name: z.string().trim().min(0),
-  email: z.string().trim().min(0).email(),
+  name: z.string().trim().min(1),
+  email: z.string().trim().min(1).email(),
 });
 
 export type TUser = z.infer<typeof User>
