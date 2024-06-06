@@ -12,4 +12,4 @@ export const ArrUser = z.array(User)
 
 export type TArrUser = TUser[]
 
-export const isEmail = z.string().trim().min(0).email();
+export const isEmail = z.string().trim().min(1).email();
